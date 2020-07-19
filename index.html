@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" id="go-gelato">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <title>Go! Gelato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav" id="myNav">
+                <ul>
+                    <li><a href="#go-gelato">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#lokasi">Store</a></li>
+                    <li><a href="#tentang">Our Stories</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                        <i class="fa fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="jumbotron-teks">
+                    <h1>Made your day <br> with a scoop of happiness <br> <span>Go! Gelato</span></h1>
+                </div>  
+                <div class="jumbotron-button">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container">
+            <article id="tentang">
+                <div class="judul">
+                    <h2><span>Our Stories</span></h2>
+                </div>
+                <img class="foto-stories" src="assets/img/stories.jpg">
+                <div class="deskripsi-stories">
+                    <p>We proudly brought our best ingredients into every scoop of our gelato. Made by the real fruit and healthy flavors, we have been dedicated to bring happiness in every scoop you have taken. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates velit tempore ex suscipit perferendis temporibus nisi fugiat eveniet magnam vel deserunt natus, voluptas ullam placeat inventore at eos distinctio.</p>
+                </div>
+            </article>
+
+            <article id="menu">
+                    <div class="judul">
+                        <h2><span>Menu</span></h2>
+                    </div>
+                    <div class="daftar-menu">
+                        <div class="satu-menu card">
+                            <div class="gambar-menu">
+                             <img src="assets/img/berry.jpg">
+                             <p>Berrylicious</p>
+                            </div>
+                        </div>
+                        <div class="satu-menu card">
+                            <div class="gambar-menu">
+                             <img src="assets/img/tuttyfruity.jpg">
+                             <p>Tutty Fruity</p>
+                            </div>
+                        </div>
+                        <div class="satu-menu card">
+                            <div class="gambar-menu">
+                             <img src="assets/img/snowice.jpg">
+                             <p>Snow Ice Cream</p>
+                            </div>
+                        </div>
+                        <div class="satu-menu card">
+                            <div class="gambar-menu">
+                             <img src="assets/img/classic.jpg">
+                             <p>Classic Gelato</p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+
+            <article id="lokasi">
+                  <div class="judul">
+                      <h2><span>Stores</span></h2>
+                  </div>
+                  <div class="daftar-lokasi">
+                      <div id="googleMap"></div>
+                        <div class="satu-lokasi">
+                            <h3><span>Go! Gelato Sudirman</span></h3>
+                            <p>Jl. Sudirman No.102 Jakarta Pusat <br> Telp : 021-74111122</p>
+                        </div>
+                        <div class="satu-lokasi">
+                            <h3><span>Go! Gelato Ciputat</span></h3>
+                            <p>Jl. Raya Ciputat No. 50 Tangerang Selatan <br> Telp : 021-74622632</p>
+                        </div>
+                        <div class="satu-lokasi">
+                          <h3><span>Go! Gelato Blok M</span></h3>
+                          <p>Stasiun MRT Blok M <br> Telp : 021-74622222</p>
+                      </div>
+                  </div>
+            </article>
+         </div>
+        </div>
+    </main>
+
+    <div class="clear"></div>
+    
+    <footer>
+        <p>&#169; Velia Handayani 2020</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

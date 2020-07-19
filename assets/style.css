@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+    margin:0;
+    padding:0;
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    font-family: "VT323", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #282b2e;
+    font-size: xx-large;
+}
+
+/* HEADER */
+
+#myNav {
+    transition: background-color 0.4s;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.topnav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+.topnav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.topnav a {
+    padding: 15px 25px;
+    color: whitesmoke;
+}
+
+.topnav a:hover {
+    background-color: rgb(163, 149, 245);
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.topnav .icon {
+    display: none;
+  }
+
+/* JUMBOTRON */ 
+
+.jumbotron {
+    height: 550px;
+    padding: 150px 0 100px 0;
+    text-align: left;
+    font-size: 20px;
+    background-size: cover;
+    background-position-y: center;
+    background-image: url("../assets/img/main.jpg");
+}
+
+.jumbotron-teks {
+    color: rgb(214, 233, 245);
+    padding: 40px;
+    margin-right: 90px;
+    float: right;
+    text-align: center;
+    line-height: 45px;
+}
+
+.jumbotron-teks span {
+    font-weight: bolder;
+    font-family: "VT323", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(153, 197, 223);
+    font-size: 1.2em;
+}
+
+.jumbotron h1{
+    margin-bottom: 10px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+}
+
+/* CONTENT */
+
+#content {
+    float: left;
+    margin: 0 auto;
+}
+
+#menu {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+#menu .judul {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.daftar-menu {
+    display: flex;
+}
+
+.satu-menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.satu-menu:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.satu-menu img {
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+.gambar-menu p {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin: 15px;
+}
+
+
+/* TENTANG KAMI */
+
+#tentang {
+    height: 470px;
+    padding: 30px 0px;
+}
+
+#tentang p{
+    line-height: 25px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 60px;
+    text-align: justify;
+}
+
+#tentang .judul {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+
+#tentang .foto-stories {
+    margin: 10px 60px;
+    height: 300px;
+    object-fit: cover;
+    float: left;
+}
+
+#tentang .deskripsi-stories {
+    margin-top: 50px;
+}
+
+
+
+/* LOKASI */
+
+#lokasi {
+    height: 400px;
+}
+
+#lokasi .judul {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.satu-lokasi {
+    text-align: right;
+    width: 350px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.satu-lokasi p{
+    font-size: 15px;
+    margin: 0;
+}
+
+.satu-lokasi h3 {
+    margin: 0;
+}
+
+.satu-lokasi span{
+    color: #a69dbb;
+    font-size: 1.2em;
+}
+
+#googleMap {
+    float: right;
+    width: 40%;
+    height: 250px;
+    margin-right: 140px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #545a80;
+    color: white;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    right: 0;
+    bottom:0;
+    left:0;
+}
+
+footer p{
+    padding-top: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Tablet & Smartphone*/ 
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    #myNav {
+        height: inherit;
+    }
+    
+    .topnav a{
+        display: none;
+    }
+
+    .topnav a.icon {
+        margin: 0 10px;
+        float: right;
+        display: block;
+    }
+      
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        transition: 0.4s;
+        display: block;
+        float: left;
+    }
+
+    .jumbotron {
+        height: 350px;
+        padding: 100px 0px 20px 10px;
+    }
+
+    .jumbotron-teks {
+        margin-right: 0px;
+    }
+
+    .jumbotron-teks h1 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: right;
+    }
+
+    .jumbotron-teks p {
+        font-size: 15px;
+    }
+
+    .daftar-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .satu-menu {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #tentang .foto-stories {
+        width: 270px;
+    }
+
+    #tentang .deskripsi-stories {
+        margin-top: 20px;
+    }
+
+    #googleMap {
+        margin-right: 40px;
+
+    }
+
+    #lokasi {
+        height: 450px;
+    }
+
+    .satu-lokasi {
+        text-align: right;
+        width: 50%;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    footer {
+        bottom:0;
+    }
+}
+
+ @media all and (max-width: 670px) {
+
+    #content{
+        max-width: 100%;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .jumbotron {
+        padding-top: 120px;
+    }
+
+     #tentang {
+         height: 750px;
+     }
+
+     #tentang img {
+         margin: 0 auto;
+         width: 300px;
+         float: none;
+     }
+
+     #lokasi {
+        height: 650px;
+    }
+
+     #lokasi .judul {
+         text-align: center;
+         margin-left: 0px;
+     }
+
+     .satu-lokasi {
+        text-align: center;
+        display: inline-block;
+        margin-top: 15px;
+        width: 100%;
+     }
+
+     #googleMap {
+         width: 75%;
+         text-align: center;
+     }
+
+ }
